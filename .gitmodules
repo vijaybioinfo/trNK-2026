@@ -1,6 +1,6 @@
-[submodule "mtDNA_variant_detection_pipeline"]
-	path = mtDNA_variant_detection_pipeline
-  url = https://github.com/vijaybioinfo/mtDNA_variant_detection.git
+[submodule "mtDNA_variant_detection"]
+	path = mtDNA_variant_detection
+	url = https://github.com/vijaybioinfo/mtDNA_variant_detection.git
 [submodule "bulk_rnaseq_pipeline_2026"]
 	path = bulk_rnaseq_pipeline_2026
 	url = https://github.com/vijaybioinfo/bulk_rnaseq_pipeline_2026.git
