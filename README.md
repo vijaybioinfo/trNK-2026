@@ -34,6 +34,14 @@ For more specific information about the data generation and processing, please c
 ### Spatial Transcriptomics
 • To generate the clustering of Spatial Transcriptomics data just pull [our in-house pipeline](https://github.com/vijaybioinfo/Xenium-clustering/) using Seurat.  
 
+
+### mtSNV pipeline
+• To generate the results for the identification of informative mtSNVs, use [our in-house pipeline](https://github.com/vijaybioinfo/mtDNA_variant_detection).
+
+### Bulk RNA-seq pipeline
+• To generate the results for the Bulk RNA-seq, use [our in-house pipeline](https://github.com/vijaybioinfo/bulk_rnaseq_pipeline_2026.git).  
+
+
 ## Figures 
 > Relevant scripts are located in: ./figures
 
