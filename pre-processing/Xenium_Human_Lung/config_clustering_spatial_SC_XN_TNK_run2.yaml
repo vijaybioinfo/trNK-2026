@@ -1,0 +1,44 @@
+---
+project_name: KoMA_donors_spe_SC_XN_match_markers_populations_Tcells_NK_v3_run2
+# path to the Cell Ranger ouput; it can even be a CSV file like the one in a Cell Ranger aggregation
+input_expression: "/home/donaldo/bioadhoc/spatial/KoMa/tumor_merge/sc_spatial_aggr/paper/info/seurat_objects/concat_counts_mtx_matching_genes_populations_July31_2026_Tcells_NK.rds"
+# A table of the metadata per library, or the whole metadata ready.
+# It can be multiple files: [metadata_lib.csv, demultiplexed_hashtags.rdata]
+metadata:
+  - "/home/donaldo/bioadhoc/spatial/KoMa/tumor_merge/results/clutering/KoMa_NK_paper/KoMA_donors_spe_SC_XN_match_markers_populations_Tcells_NK_v3/.object_meta.data_seurat_mean0.01_pct25_pc20.rds"
+# if you don't add "/" at the end, it will append 'project_name'
+output_dir: "/home/donaldo/bioadhoc/spatial/KoMa/tumor_merge/results/clutering/KoMa_NK_paper"
+filtering:
+  subset:
+    # expr: "RNA_snn_res.0.1 %in% c('1', '13')" ### this is from previous run
+    # expr: "orig.celltype_cellchat %in% c('CD8', 'CD4', 'NK', 'I_CD8', 'I_CD4', 'I_NK')"
+    expr: "RNA_snn_res.0.1 != '3'"
+    # expre: "doublet_scores <= 0.3"
+    # expree: "orig.HT_ID.global %in% c('Singlet')"
+  nSamples_expressed: 0.001 # % of cells in which that gene is present
+regress_var: [nCount_RNA]
+norm: LogNormalize
+variable_features:
+  #file: ./data/prot_coding_genes.csv
+  method: vst
+  nfeatures: 2000
+  percent: [20]  # iterated
+  mean.cutoff: [0.01, 8]
+  dispersion.cutoff: [1, Inf]
+resolution: [1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9] # iterated during markers
+dim_reduction:
+  base: {type: harmony, batch: "orig.data_class", n_comp: 40, chosen_comp: [20]} # iterated: chosen
+  tsne: {perplexity: 100, reduction.use: "pca"}
+  umap: {n.neighbors: 10, min.dist: 0.1}
+markers:
+  select: snn_res. # pattern in the metadata's columns
+  test: MAST
+  avg_logFC: 0.25
+  p_val_adj: 0.05
+tool: seurat
+exec: /mnt/hpc-apps/R/4.1.3/bin/Rscript
+script: /home/donaldo/bin/clustering/R/seurat.R
+pipeline: /home/donaldo/bin/clustering/
+cluster_config: /home/donaldo/bin/clustering/cluster_slurm.json
+environment: clustering_env
+...
