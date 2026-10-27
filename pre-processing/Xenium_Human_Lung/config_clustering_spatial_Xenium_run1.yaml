@@ -1,0 +1,40 @@
+### config yaml for Spatial transcriptomics
+project_name: KoMa_trNKpaper_run1_slide1_samples_selected_REDO
+output_dir: "/home/donaldo/bioadhoc/spatial/KoMa/tumor_merge/results/clutering/KoMa_NK_paper/"
+# path to the Cell Ranger ouput from IGM
+input_expression: 
+  - "/home/donaldo/bioadhoc/spatial/KoMa/tumor_merge/info/slide1/outs"
+metadata:
+  - "/home/donaldo/bioadhoc/spatial/KoMa/tumor_merge/info/metadata/slide1_cell_metadata/cell_based_metada_TMA.csv"
+metadata_donor:
+  # - "/home/donaldo/bioadhoc/spatial/JaSh/JaSh_merged/info/donor_metadata/DICE_adjacent1_metadata_donor_corrected_jan12_26.csv~orig.TMA_core"
+  # - "/home/donaldo/bioadhoc/spatial/JaSh/JaSh_merged/info/donor_metadata/DICE_adjacent2_metadata_donor_corrected_jan12_26.csv~orig.TMA_core"
+filtering:
+  subset:
+    expr: "nCount_Xenium > 3"
+    expre: "orig.TMA_core %in% c('B12', 'B13', 'D10', 'D11', 'D12', 'D13', 'E8')"
+  nSamples_expressed: 0.001 # % of cells in which that gene is present
+regress_var: [nCount_Xenium]
+norm: LogNormalize
+variable_features:
+  file: "no_file"
+  method: vst
+  nfeatures: 2000
+  percent: [30, 40, 50]  # iterated
+  mean.cutoff: [0.01, 8]
+  dispersion.cutoff: [1, Inf]
+resolution: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8] # iterated during markers
+dim_reduction:
+  base: {type: pca, n_comp: 40, chosen_comp: [20,25,30]}
+  umap: {n.neighbors: 10, min.dist: 0.1}
+markers:
+  select: snn_res. # pattern in the metadata's columns. Redundant
+  test: MAST
+  avg_logFC: 0.25
+  p_val_adj: 0.05
+  to_plot: ['CD8A', 'EGFR', 'KRT19', 'KRT5', 'CD3E', 'CD8B', 'CD4', 'LAG3', 'CTLA4', 'FOXP3', 'CD19', 'CD79A', 'MARCO', 'CD14', 'TP63', 'PDCD1', 'EPCAM', 'GZMB', 'CCN2', 'CD3E', 'MS4A1', 'KIT', 'GATA2', 'CLEC10A', 'CLEC9A', 'FCGR3A', 'KLRF1', 'FCGBP2', 'CLDN1', 'MUC5B', 'FCGBP', 'MUC5AC', 'MUC1', 'FOXJ1', 'TEKT1', 'LTBP2', 'TNXB', 'PLVAP', 'CD34', 'MYLK', 'CSRP1', 'NOTCH3', 'PDGFRB', 'MPZ', 'L1CAM', 'COL2A1', 'CHAD', 'PDGFRA', 'ENTPD1', 'CD247']
+exec: /mnt/hpc-apps/R/4.3.3/bin/Rscript
+pipeline: /home/donaldo/bin/spatial_v2/spatial_clustering/
+R_module: R/4.3.3 #if defined, it will use this module version to run the analysis, if not it will use your default
+cluster_config: /home/donaldo/bin/spatial_v2/spatial_clustering/cluster_slurm.json #HPC resources definition
+conda_env: clustering_env #Compatible with Ciro's clustering env
