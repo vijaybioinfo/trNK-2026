@@ -1,0 +1,145 @@
+### --------------------------- Arguments --------------------------- ###
+Name for data analysis: R24_Cancer_Batches-1-to-20_NK_ALL
+General output directory: /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/reanalyze
+Job output directory: /path/to/user/sequencing_data/05-14-2022/jobs_scripts/reanalyze/R24_Cancer_Batches-1-to-20_NK_ALL/R24_Cancer_Batches-1-to-20_NK_ALL_04-01-2024_1
+Original aggregation output: /path/to/user/sequencing_data/05-14-2022/reanalyze/data/R24_Cancer_Batches-1-to-20_NK_ALL_OrigAggr.h5
+Martian Runtime - v4.0.10
+Serving UI at http://node052.herman.lji.org:35315?auth=lmW8zwXdjaRlaHdhrI6HlIKDu35hzlPZDf3lDr7cMs8
+
+Running preflight checks (please wait)...
+2024-04-01 18:23:24 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.PARSE_PARAM_CSV
+2024-04-01 18:23:24 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.PARSE_PARAM_CSV.fork0.chnk0.main
+2024-04-01 18:23:24 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.PARSE_AGGR_CSV
+2024-04-01 18:23:24 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.PARSE_AGGR_CSV.fork0.chnk0.main
+2024-04-01 18:23:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.PARSE_PARAM_CSV
+2024-04-01 18:23:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.PARSE_AGGR_CSV
+2024-04-01 18:23:27 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.REANALYZE_VERIFY_SAMPLE_IDS
+2024-04-01 18:23:27 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SETUP_SAMPLES
+2024-04-01 18:23:27 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SETUP_SAMPLES.fork0.chnk0.main
+2024-04-01 18:23:30 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SETUP_SAMPLES
+2024-04-01 18:23:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT
+2024-04-01 18:23:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT.fork0.chnk0.main
+2024-04-01 18:23:36 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT
+2024-04-01 18:23:36 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2024-04-01 18:23:36 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.PREPROCESS_MATRIX.fork0.split
+2024-04-01 18:24:33 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2024-04-01 18:24:33 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.PREPROCESS_MATRIX.fork0.join
+2024-04-01 18:26:30 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER._ANTIGEN_ANALYZER.CALL_ANTIBODIES
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER._ANTIGEN_ANALYZER.SUMMARIZE_ANTIBODY_ANALYSIS
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER._ANTIBODY_ANALYZER.CALL_ANTIBODIES
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_BATCH_CORRECTION_PCA.PCA_PREP
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2024-04-01 18:26:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS.fork0.split
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER._ANTIBODY_ANALYZER.SUMMARIZE_ANTIBODY_ANALYSIS
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_BATCH_CORRECTION_PCA.RUN_PCA2
+2024-04-01 18:26:30 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_BATCH_CORRECTION_PCA.POST_PCA
+2024-04-01 18:26:31 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.CORRECT_CHEMISTRY_BATCH
+2024-04-01 18:26:31 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA
+2024-04-01 18:26:31 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA.fork0.split
+2024-04-01 18:26:34 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2024-04-01 18:26:34 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS.fork0.join
+2024-04-01 18:26:34 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA
+2024-04-01 18:26:34 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA.fork0.chnk0.main
+2024-04-01 18:26:40 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2024-04-01 18:32:37 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA.fork0 chunks_running
+2024-04-01 18:32:46 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA
+2024-04-01 18:32:46 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA.fork0.join
+2024-04-01 18:32:49 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_PCA
+2024-04-01 18:32:50 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE
+2024-04-01 18:32:50 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE.fork0.split
+2024-04-01 18:32:50 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS
+2024-04-01 18:32:50 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.split
+2024-04-01 18:32:50 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-04-01 18:32:50 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.split
+2024-04-01 18:32:50 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP
+2024-04-01 18:32:50 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP.fork0.split
+2024-04-01 18:32:53 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP
+2024-04-01 18:32:53 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP.fork0.chnk0.main
+2024-04-01 18:32:53 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE
+2024-04-01 18:32:53 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE.fork0.chnk0.main
+2024-04-01 18:32:53 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-04-01 18:32:53 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.chnk0.main
+2024-04-01 18:33:05 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk0.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk1.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk2.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk3.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk4.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk5.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk6.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk7.main
+2024-04-01 18:33:05 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk8.main
+2024-04-01 18:33:38 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS
+2024-04-01 18:33:38 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS.fork0.join
+2024-04-01 18:33:44 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_KMEANS
+2024-04-01 18:38:18 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-04-01 18:38:18 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.join
+2024-04-01 18:38:21 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-04-01 18:38:21 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.COMBINE_CLUSTERING
+2024-04-01 18:38:21 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.COMBINE_CLUSTERING.fork0.chnk0.main
+2024-04-01 18:38:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.COMBINE_CLUSTERING
+2024-04-01 18:38:27 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-04-01 18:38:27 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.split
+2024-04-01 18:38:30 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk0.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk1.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk2.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk3.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk4.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk5.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk6.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk7.main
+2024-04-01 18:38:30 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk8.main
+2024-04-01 18:38:57 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE.fork0 chunks_running
+2024-04-01 18:38:57 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP.fork0 chunks_running
+2024-04-01 18:43:37 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0 chunks running (2/9 completed)
+2024-04-01 18:44:55 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE.fork0 chunks_running
+2024-04-01 18:44:55 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP.fork0 chunks_running
+2024-04-01 18:45:07 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-04-01 18:45:07 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.join
+2024-04-01 18:45:13 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-04-01 18:46:34 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP
+2024-04-01 18:46:34 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP.fork0.join
+2024-04-01 18:46:37 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_UMAP
+2024-04-01 18:48:17 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE
+2024-04-01 18:48:17 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE.fork0.join
+2024-04-01 18:48:23 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.RUN_TSNE
+2024-04-01 18:48:23 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2024-04-01 18:48:23 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.split
+2024-04-01 18:48:26 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2024-04-01 18:48:26 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.chnk0.main
+2024-04-01 18:48:32 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2024-04-01 18:48:32 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.join
+2024-04-01 18:48:38 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2024-04-01 18:48:38 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS
+2024-04-01 18:48:38 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS.fork0.split
+2024-04-01 18:48:38 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS
+2024-04-01 18:48:38 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS.fork0.split
+2024-04-01 18:48:41 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS
+2024-04-01 18:48:41 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS.fork0.chnk0.main
+2024-04-01 18:49:08 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS
+2024-04-01 18:49:08 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS.fork0.chnk0.main
+2024-04-01 18:49:26 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS
+2024-04-01 18:49:26 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS.fork0.join
+2024-04-01 18:51:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS
+2024-04-01 18:51:27 [runtime] (run:slurm)       ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS.fork0.join
+2024-04-01 18:51:33 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.CLOUPE_PREPROCESS
+2024-04-01 18:53:48 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NK_ALL.SC_RNA_REANALYZER_CS.SUMMARIZE_REANALYSIS
+
+Outputs:
+- Secondary analysis output CSV:          /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/reanalyze/R24_Cancer_Batches-1-to-20_NK_ALL/outs/analysis
+- Secondary analysis web summary:         /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/reanalyze/R24_Cancer_Batches-1-to-20_NK_ALL/outs/web_summary.html
+- Copy of the input parameter CSV:        null
+- Copy of the input aggregation CSV:      null
+- Loupe Browser file:                     /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/reanalyze/R24_Cancer_Batches-1-to-20_NK_ALL/outs/cloupe.cloupe
+- Filtered feature-barcode matrices MEX:  /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/reanalyze/R24_Cancer_Batches-1-to-20_NK_ALL/outs/filtered_feature_bc_matrix
+- Filtered feature-barcode matrices HDF5: /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/reanalyze/R24_Cancer_Batches-1-to-20_NK_ALL/outs/filtered_feature_bc_matrix.h5
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+2024-04-01 18:53:54 Shutting down.
+Saving pipestance info to "R24_Cancer_Batches-1-to-20_NK_ALL/R24_Cancer_Batches-1-to-20_NK_ALL.mri.tgz"
+Job completed!
+Check for errors if any.

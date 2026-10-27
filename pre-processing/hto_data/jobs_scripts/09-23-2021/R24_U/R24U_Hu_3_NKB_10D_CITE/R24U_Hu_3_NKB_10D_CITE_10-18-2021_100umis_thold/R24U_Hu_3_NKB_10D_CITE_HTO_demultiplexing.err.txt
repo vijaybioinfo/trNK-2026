@@ -1,0 +1,64 @@
+cat: /var/spool/torque/aux//4521064.herman.hpc.lji.orggpu: No such file or directory
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Normalizing across features
+Iteration 1
+Using quantile 0.4
+Iteration 2
+Using quantile 0.4
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+PC_ 1 
+Positive:  Hashtag06, Hashtag08, Hashtag07, Hashtag05, Hashtag03 
+Negative:  Hashtag02, Hashtag04, Hashtag10, Hashtag01, Hashtag09 
+PC_ 2 
+Positive:  Hashtag02, Hashtag01, Hashtag03, Hashtag07, Hashtag10 
+Negative:  Hashtag04, Hashtag06, Hashtag05, Hashtag08, Hashtag09 
+PC_ 3 
+Positive:  Hashtag09, Hashtag01, Hashtag03, Hashtag10, Hashtag07 
+Negative:  Hashtag02, Hashtag04, Hashtag06, Hashtag08, Hashtag05 
+PC_ 4 
+Positive:  Hashtag09, Hashtag02, Hashtag08, Hashtag06, Hashtag07 
+Negative:  Hashtag10, Hashtag03, Hashtag01, Hashtag05, Hashtag04 
+PC_ 5 
+Positive:  Hashtag03, Hashtag01, Hashtag07, Hashtag04, Hashtag08 
+Negative:  Hashtag10, Hashtag06, Hashtag09, Hashtag05, Hashtag02 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+12:38:32 UMAP embedding parameters a = 0.9922 b = 1.112
+12:38:32 Read 22435 rows and found 10 numeric columns
+12:38:32 Using Annoy for neighbor search, n_neighbors = 30
+12:38:32 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+12:38:36 Writing NN index file to temp file /mnt/beegfs/vfajardo/pbstmp.4521064.herman.hpc.lji.org/RtmphUpT4w/file375b3cd238fc
+12:38:36 Searching Annoy index using 1 thread, search_k = 3000
+12:38:46 Annoy recall = 100%
+12:38:46 Commencing smooth kNN distance calibration using 1 thread
+12:38:48 Initializing from normalized Laplacian + noise
+12:38:49 Commencing optimization for 200 epochs, with 917574 positive edges
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+12:39:15 Optimization finished
+Warning messages:
+1: Requested number is larger than the number of available items (10). Setting to 10. 
+2: Requested number is larger than the number of available items (10). Setting to 10. 
+3: Requested number is larger than the number of available items (10). Setting to 10. 
+4: Requested number is larger than the number of available items (10). Setting to 10. 
+5: Requested number is larger than the number of available items (10). Setting to 10. 

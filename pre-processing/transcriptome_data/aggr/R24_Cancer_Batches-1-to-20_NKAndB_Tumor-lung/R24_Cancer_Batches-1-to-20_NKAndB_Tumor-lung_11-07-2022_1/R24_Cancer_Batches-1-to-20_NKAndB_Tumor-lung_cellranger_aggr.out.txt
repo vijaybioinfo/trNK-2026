@@ -1,0 +1,282 @@
+
+
+######### ------------- Job to Run Seurat Analysis ------------ #########
+
+
+### --------------------------- Arguments --------------------------- ###
+### --------------------- Job general arguments --------------------- ###
+Name for data aggregation: R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung
+General output directory: /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr
+Job output directory: /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/jobs_scripts/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung_11-07-2022_1
+csv file with count matrices to be aggregated: /path/to/user/sequencing_data/05-14-2022/aggr/data/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung_aggr_table.1.0.csv
+/path/to/home/bin/cellranger-3.1.0/cellranger-cs/3.1.0/bin
+cellranger aggr (3.1.0)
+Copyright (c) 2019 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '3.1.0-v3.2.3'
+Serving UI at http://compute-1-1.hpc.lji.org:44812?auth=huX_PflGuCZQKLYJ2hRvWlRpdzuest61RFt6HE3aQAU
+
+Running preflight checks (please wait)...
+2022-11-07 01:24:03 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.PARSE_CSV
+2022-11-07 01:24:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.PARSE_CSV.fork0.chnk0.main
+2022-11-07 01:25:06 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.PARSE_CSV
+2022-11-07 01:25:06 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION
+2022-11-07 01:25:06 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.split
+2022-11-07 01:27:03 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk00.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk01.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk02.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk03.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk04.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk05.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk06.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk07.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk08.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk09.main
+2022-11-07 01:27:03 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.chnk10.main
+2022-11-07 01:29:01 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION
+2022-11-07 01:29:01 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION.fork0.join
+2022-11-07 01:30:07 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_MOLECULE_INFO_VERSION
+2022-11-07 01:30:46 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SETUP_SAMPLES
+2022-11-07 01:30:46 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SETUP_SAMPLES.fork0.chnk0.main
+2022-11-07 01:32:32 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SETUP_SAMPLES
+2022-11-07 01:32:32 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES
+2022-11-07 01:32:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.split
+2022-11-07 01:32:32 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION
+2022-11-07 01:32:32 [runtime] (run:local)       ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION.fork0.chnk0.main
+2022-11-07 01:32:32 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION
+2022-11-07 01:33:32 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk00.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk01.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk02.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk03.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk04.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk05.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk06.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk07.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk08.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk09.main
+2022-11-07 01:33:32 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.chnk10.main
+2022-11-07 01:36:24 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES
+2022-11-07 01:36:24 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0.join
+2022-11-07 01:43:16 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES.fork0 join_running
+2022-11-07 01:45:14 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.MERGE_MOLECULES
+2022-11-07 01:45:14 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH
+2022-11-07 01:45:14 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.split
+2022-11-07 01:46:26 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk00.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk01.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk02.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk03.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk04.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk05.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk06.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk07.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk08.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk09.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk10.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk11.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk12.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk13.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk14.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk15.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk16.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk17.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk18.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk19.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk20.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk21.main
+2022-11-07 01:46:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.chnk22.main
+2022-11-07 01:49:48 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH
+2022-11-07 01:49:48 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH.fork0.join
+2022-11-07 01:51:15 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.NORMALIZE_DEPTH
+2022-11-07 01:51:15 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES
+2022-11-07 01:51:15 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0.split
+2022-11-07 01:52:13 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES
+2022-11-07 01:52:13 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0.join
+2022-11-07 01:59:11 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0 join_running
+2022-11-07 02:05:13 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0 join_running
+2022-11-07 02:11:12 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0 join_running
+2022-11-07 02:17:13 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0 join_running
+2022-11-07 02:23:12 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES.fork0 join_running
+2022-11-07 02:26:55 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.WRITE_MATRICES
+2022-11-07 02:26:55 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_INVARIANTS
+2022-11-07 02:26:55 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_INVARIANTS.fork0.split
+2022-11-07 02:26:55 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT
+2022-11-07 02:26:55 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT.fork0.chnk0.main
+2022-11-07 02:27:25 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT
+2022-11-07 02:27:25 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2022-11-07 02:27:25 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.PREPROCESS_MATRIX.fork0.split
+2022-11-07 02:27:28 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_INVARIANTS
+2022-11-07 02:27:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_INVARIANTS.fork0.join
+2022-11-07 02:28:29 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2022-11-07 02:28:29 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.PREPROCESS_MATRIX.fork0.join
+2022-11-07 02:29:26 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2022-11-07 02:29:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA
+2022-11-07 02:29:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA.fork0.split
+2022-11-07 02:29:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2022-11-07 02:29:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS.fork0.split
+2022-11-07 02:29:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_FBPCA
+2022-11-07 02:29:26 [runtime] (disabled)        ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_FBPCA
+2022-11-07 02:29:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CORRECT_CHEMISTRY_BATCH
+2022-11-07 02:29:26 [runtime] (disabled)        ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CORRECT_CHEMISTRY_BATCH
+2022-11-07 02:30:05 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2022-11-07 02:30:05 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS.fork0.join
+2022-11-07 02:30:05 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA
+2022-11-07 02:30:05 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA.fork0.chnk0.main
+2022-11-07 02:30:26 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2022-11-07 02:30:26 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA
+2022-11-07 02:30:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA.fork0.join
+2022-11-07 02:31:26 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_PCA
+2022-11-07 02:31:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION_OUTPUT
+2022-11-07 02:31:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION_OUTPUT.fork0.chnk0.main
+2022-11-07 02:32:24 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION_OUTPUT
+2022-11-07 02:32:24 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS
+2022-11-07 02:32:24 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS.fork0.split
+2022-11-07 02:32:24 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2022-11-07 02:32:24 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.split
+2022-11-07 02:32:24 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE
+2022-11-07 02:32:24 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE.fork0.split
+2022-11-07 02:32:24 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP
+2022-11-07 02:32:24 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP.fork0.split
+2022-11-07 02:33:24 [runtime] (update)          ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_INVARIANTS.fork0 join_running
+2022-11-07 02:33:27 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2022-11-07 02:33:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.chnk0.main
+2022-11-07 02:33:27 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE
+2022-11-07 02:33:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE.fork0.chnk0.main
+2022-11-07 02:33:27 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS
+2022-11-07 02:33:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk0.main
+2022-11-07 02:33:36 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP
+2022-11-07 02:33:36 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP.fork0.chnk0.main
+2022-11-07 02:34:24 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE
+2022-11-07 02:34:24 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE.fork0.join
+2022-11-07 02:34:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2022-11-07 02:34:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.join
+2022-11-07 02:34:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS
+2022-11-07 02:34:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS.fork0.join
+2022-11-07 02:34:30 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP
+2022-11-07 02:34:30 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP.fork0.join
+2022-11-07 02:35:25 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_TSNE
+2022-11-07 02:35:28 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_KMEANS
+2022-11-07 02:35:28 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2022-11-07 02:35:28 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2022-11-07 02:35:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS.fork0.split
+2022-11-07 02:35:31 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_UMAP
+2022-11-07 02:36:19 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CHECK_INVARIANTS
+2022-11-07 02:36:25 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2022-11-07 02:36:25 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS.fork0.chnk0.main
+2022-11-07 02:37:28 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2022-11-07 02:37:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS.fork0.join
+2022-11-07 02:38:25 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2022-11-07 02:38:25 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.COMBINE_CLUSTERING
+2022-11-07 02:38:25 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.COMBINE_CLUSTERING.fork0.chnk0.main
+2022-11-07 02:39:26 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.COMBINE_CLUSTERING
+2022-11-07 02:39:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2022-11-07 02:39:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.split
+2022-11-07 02:40:26 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2022-11-07 02:40:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk0.main
+2022-11-07 02:41:26 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2022-11-07 02:41:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.join
+2022-11-07 02:42:26 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2022-11-07 02:42:26 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2022-11-07 02:42:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.split
+2022-11-07 02:43:26 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2022-11-07 02:43:26 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.chnk0.main
+2022-11-07 02:44:27 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2022-11-07 02:44:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.join
+2022-11-07 02:45:27 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2022-11-07 02:45:27 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS
+2022-11-07 02:45:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS.fork0.split
+2022-11-07 02:46:27 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS
+2022-11-07 02:46:27 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS.fork0.chnk0.main
+2022-11-07 02:48:28 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS
+2022-11-07 02:48:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS.fork0.join
+2022-11-07 02:49:28 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.SC_RNA_AGGREGATOR.SUMMARIZE_AGGREGATED_REPORTS
+2022-11-07 02:49:28 [runtime] (ready)           ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS
+2022-11-07 02:49:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS.fork0.split
+2022-11-07 02:50:28 [runtime] (split_complete)  ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS
+2022-11-07 02:50:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS.fork0.chnk0.main
+2022-11-07 02:51:28 [runtime] (chunks_complete) ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS
+2022-11-07 02:51:28 [runtime] (run:torque)      ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS.fork0.join
+2022-11-07 02:52:29 [runtime] (join_complete)   ID.R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.SC_RNA_AGGREGATOR_CS.CLOUPE_PREPROCESS
+
+Outputs:
+- Aggregation metrics summary HTML:         /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/web_summary.html
+- Aggregation metrics summary JSON:         /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/summary.json
+- Secondary analysis output CSV:            null
+- Filtered feature-barcode matrices MEX:    /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/filtered_feature_bc_matrix
+- Filtered feature-barcode matrices HDF5:   /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/filtered_feature_bc_matrix.h5
+- Unfiltered feature-barcode matrices MEX:  /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/raw_feature_bc_matrix
+- Unfiltered feature-barcode matrices HDF5: /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/raw_feature_bc_matrix.h5
+- Copy of the input aggregation CSV:        /mnt/hpcscratch/vfajardo/sequencing_data/05-14-2022/aggr/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/outs/aggregation.csv
+- Loupe Cell Browser file:                  null
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+2022-11-07 02:52:35 Shutting down.
+Saving pipestance info to "R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung/R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung.mri.tgz"
+Job completed!
+Check for errors if any.
+
+         ----- Job Summary Statistics -----
+                    Queue: default                  
+                   Job ID: 5545210.herman.hpc.lji.org
+                 Job Name: R24_Cancer_Batches-1-to-20_NKAndB_Tumor-lung_aggr
+                Node name: compute-1-1.hpc.lji.org  
+Job duration on this node: 01:28:40                 
+          Node Multiplier: 1.066                    
+      Normalized walltime: 01:34:31                 
+
+Job Requested resources:
+    nodes=1:ppn=8,mem=250gb,walltime=80:00:00,neednodes=1:ppn=8
+Used resources (as reported by Torque):
+    cput=00:00:36,vmem=1095648kb,walltime=01:34:31,mem=22316kb,energy_used=0
+
+
+Additional Statistics (cgroup stats):
+
+CPU core numbers on node assigned for usage: 0-31
+CPU work distribution:
+CPU Core #0: 5.00%
+CPU Core #1: 2.05%
+CPU Core #2: 7.34%
+CPU Core #3: 5.30%
+CPU Core #4: 4.41%
+CPU Core #5: 5.09%
+CPU Core #6: 4.73%
+CPU Core #7: 4.39%
+CPU Core #8: 5.18%
+CPU Core #9: 4.47%
+CPU Core #10: 4.18%
+CPU Core #11: 5.63%
+CPU Core #12: 4.71%
+CPU Core #13: 5.05%
+CPU Core #14: 5.47%
+CPU Core #15: 4.78%
+CPU Core #16: 0.63%
+CPU Core #17: 1.59%
+CPU Core #18: 2.58%
+CPU Core #19: 1.68%
+CPU Core #20: 1.46%
+CPU Core #21: 1.76%
+CPU Core #22: 1.70%
+CPU Core #23: 3.38%
+CPU Core #24: 1.26%
+CPU Core #25: 1.39%
+CPU Core #26: 0.89%
+CPU Core #27: 0.56%
+CPU Core #28: 0.56%
+CPU Core #29: 0.47%
+CPU Core #30: 0.96%
+CPU Core #31: 1.20%
+
+Memory requested: 256000 MB
+Memory used:      91 MB
+Swap used:        0 MB
+
+Number times max memory limit reached or attempted to exceed: 0
+
+Max Memory Used / Memory Requested: .0358%
+

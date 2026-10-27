@@ -1,0 +1,192 @@
+
+
+######### --------- Job to Run HTO-based deconvolution --------- #########
+
+
+### --------------------------- Arguments --------------------------- ###
+### --------------------- Job general arguments --------------------- ###
+Project name: R24G_Hu_1_CD4_5D_CITE
+Job output directory: /path/to/user/R24/jobs_scripts/deconvolution/HTO_based/06-10-2021/R24_G/R24G_Hu_1_CD4_5D_CITE/R24G_Hu_1_CD4_5D_CITE_06-17-2021_100umis_thold
+### --------------- HTO-based deconvolution arguments --------------- ###
+Absolute path to reports directory: /path/to/user/R24/deconvolution/HTO_based/06-10-2021/R24_G/R24G_Hu_1_CD4_5D_CITE/R24G_Hu_1_CD4_5D_CITE_06-17-2021_100umis_thold
+Absolute path to HTO data: /path/to/user/sequencing_data/06-10-2021/count/R24_G/R24G_Hu_1_CD4_5D_CITE/outs/raw_feature_bc_matrix
+Gene expression data or NULL value: 
+UMI threshold for raw data filtering or NULL value: 100
+############    -------   HTO-based Deconvolution    ------    ############
+
+
+### -------------------------- Dependencies ------------------------- ###
+Dependencies loaded...
+
+
+### --------------------------- Arguments --------------------------- ###
+Reports path: /path/to/user/R24/deconvolution/HTO_based/06-10-2021/R24_G/R24G_Hu_1_CD4_5D_CITE/R24G_Hu_1_CD4_5D_CITE_06-17-2021_100umis_thold 
+Absolute path to HTO data: /path/to/user/sequencing_data/06-10-2021/count/R24_G/R24G_Hu_1_CD4_5D_CITE/outs/raw_feature_bc_matrix 
+Project name: R24G_Hu_1_CD4_5D_CITE 
+HTO names:  
+UMI threshold: 100 
+
+
+### --------------------------- Load data --------------------------- ###
+HTO data has been loaded.
+
+
+### ---------------------- Data preprocessing ----------------------- ###
+Preprocessing directory has been created. Check warnings if any.
+
+
+# ---> Filtering according to UMI counts.
+UMI count threshold to use: 100
+Filtering applied!
+
+
+HTO table has been filtered if it was required.
+
+
+### ------------------------- Main program -------------------------- ###
+
+
+### ----------------------- HTO seurat object ----------------------- ###
+HTO-assay created as a seurat object and processed accordingly.
+
+
+### ------------------------- Deconvolution ------------------------- ###
+Deconvolution applied based on MULTIseq.
+
+
+### ------------------------ Reclassification ----------------------- ###
+# ---> Doublet enrichment.
+
+
+### ---------------------------- Raw data --------------------------- ###
+Raw data output to a csv file.
+
+
+### ------------------------ General reports ------------------------ ###
+# Classification summary
+# Classification per cell.
+
+
+### --------------------- HTO counts across IDs --------------------- ###Plots output.
+
+
+### ------------------ Doublet and negatives rate ------------------- ###
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+
+### ------------------- Dimensionality reduction -------------------- ###
+Dimensionality reduction-related plots have been output.
+
+
+### -------------------------- Seurat object ------------------------ ###
+Seurat object for the HTO assay has been output.
+R version 3.6.1 (2019-07-05)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: CentOS Linux 7 (Core)
+
+Matrix products: default
+BLAS:   /mnt/BioApps/R/3.6.1/lib64/R/lib/libRblas.so
+LAPACK: /mnt/BioApps/R/3.6.1/lib64/R/lib/libRlapack.so
+
+locale:
+[1] C
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+[1] dplyr_0.8.5    stringr_1.4.0  Rtsne_0.15     ggplot2_3.3.0  Seurat_3.2.2  
+[6] optparse_1.6.6
+
+loaded via a namespace (and not attached):
+ [1] nlme_3.1-147          matrixStats_0.57.0    RcppAnnoy_0.0.16     
+ [4] RColorBrewer_1.1-2    httr_1.4.2            sctransform_0.3.1    
+ [7] tools_3.6.1           R6_2.4.1              irlba_2.3.3          
+[10] rpart_4.1-15          KernSmooth_2.23-17    uwot_0.1.8           
+[13] mgcv_1.8-31           lazyeval_0.2.2        colorspace_1.4-1     
+[16] withr_2.2.0           tidyselect_1.1.0      gridExtra_2.3        
+[19] compiler_3.6.1        plotly_4.9.2.1        labeling_0.3         
+[22] scales_1.1.1          lmtest_0.9-38         spatstat.data_1.4-3  
+[25] ggridges_0.5.2        pbapply_1.4-3         spatstat_1.64-1      
+[28] goftest_1.2-2         digest_0.6.25         spatstat.utils_1.17-0
+[31] pkgconfig_2.0.3       htmltools_0.4.0       parallelly_1.21.0    
+[34] fastmap_1.0.1         htmlwidgets_1.5.1     rlang_0.4.6          
+[37] shiny_1.4.0.2         farver_2.0.3          zoo_1.8-8            
+[40] jsonlite_1.7.1        ica_1.0-2             magrittr_1.5         
+[43] patchwork_1.0.0       Matrix_1.2-18         Rcpp_1.0.4.6         
+[46] munsell_0.5.0         abind_1.4-5           reticulate_1.18      
+[49] lifecycle_0.2.0       stringi_1.4.6         MASS_7.3-51.6        
+[52] plyr_1.8.6            grid_3.6.1            listenv_0.8.0        
+[55] promises_1.1.0        ggrepel_0.8.2         crayon_1.3.4         
+[58] miniUI_0.1.1.1        deldir_0.1-25         lattice_0.20-41      
+[61] cowplot_1.0.0         splines_3.6.1         tensor_1.5           
+[64] pillar_1.4.4          igraph_1.2.6          future.apply_1.6.0   
+[67] reshape2_1.4.4        codetools_0.2-16      leiden_0.3.4         
+[70] glue_1.4.1            data.table_1.12.8     vctrs_0.3.0          
+[73] png_0.1-7             httpuv_1.5.2          gtable_0.3.0         
+[76] getopt_1.20.3         RANN_2.6.1            purrr_0.3.4          
+[79] polyclip_1.10-0       tidyr_1.0.3           future_1.20.1        
+[82] assertthat_0.2.1      rsvd_1.0.3            mime_0.9             
+[85] xtable_1.8-4          RSpectra_0.16-0       later_1.0.0          
+[88] survival_3.1-12       viridisLite_0.3.0     tibble_3.0.1         
+[91] cluster_2.1.0         globals_0.13.1        fitdistrplus_1.1-1   
+[94] ellipsis_0.3.1        ROCR_1.0-11          
+
+
+Program finished!
+Job completed!
+Check for errors if any.
+
+         ----- Job Summary Statistics -----
+                    Queue: default                  
+                   Job ID: 4126086.herman.hpc.lji.org
+                 Job Name: R24G_Hu_1_CD4_5D_CITE_HTODem
+                Node name: compute-2-4.hpc.lji.org  
+Job duration on this node: 00:05:10                 
+          Node Multiplier: .879                     
+      Normalized walltime: 00:04:32                 
+
+Job Requested resources:
+    nodes=1:ppn=2,mem=30gb,walltime=02:00:00,neednodes=1:ppn=2
+Used resources (as reported by Torque):
+    cput=00:05:17,vmem=914492kb,walltime=00:04:32,mem=513176kb,energy_used=0
+
+
+Additional Statistics (cgroup stats):
+
+CPU core numbers on node assigned for usage: 0-47
+CPU work distribution:
+CPU Core #0: 3.04%
+CPU Core #4: 0.02%
+CPU Core #6: 0.36%
+CPU Core #7: 21.77%
+CPU Core #8: 0.18%
+CPU Core #9: 0.02%
+CPU Core #10: 0.01%
+CPU Core #11: 26.84%
+CPU Core #12: 0.24%
+CPU Core #14: 3.04%
+CPU Core #22: 27.26%
+CPU Core #26: 0.01%
+CPU Core #27: 11.84%
+CPU Core #31: 0.27%
+CPU Core #32: 0.50%
+CPU Core #34: 0.74%
+CPU Core #37: 3.77%
+
+Memory requested: 30720 MB
+Memory used:      1402 MB
+Swap used:        0 MB
+
+Number times max memory limit reached or attempted to exceed: 0
+
+Max Memory Used / Memory Requested: 4.5655%
+

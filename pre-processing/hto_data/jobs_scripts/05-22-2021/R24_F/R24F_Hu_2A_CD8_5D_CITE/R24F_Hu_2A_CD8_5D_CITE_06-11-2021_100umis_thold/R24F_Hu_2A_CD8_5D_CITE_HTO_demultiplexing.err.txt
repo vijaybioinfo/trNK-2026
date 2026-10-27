@@ -1,0 +1,62 @@
+cat: /var/spool/torque/aux//4117773.herman.hpc.lji.orggpu: No such file or directory
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Normalizing across features
+Iteration 1
+Using quantile 0.4
+Iteration 2
+Using quantile 0.4
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+PC_ 1 
+Positive:  Hashtag03, Hashtag05 
+Negative:  Hashtag04, Hashtag02 
+PC_ 2 
+Positive:  Hashtag05, Hashtag02 
+Negative:  Hashtag03, Hashtag04 
+PC_ 3 
+Positive:  Hashtag01, Hashtag02 
+Negative:  Hashtag03, Hashtag05 
+PC_ 4 
+Positive:  Hashtag01, Hashtag03 
+Negative:  Hashtag02, Hashtag04 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+16:01:54 UMAP embedding parameters a = 0.9922 b = 1.112
+16:01:54 Read 25546 rows and found 5 numeric columns
+16:01:54 Using Annoy for neighbor search, n_neighbors = 30
+16:01:54 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+16:01:59 Writing NN index file to temp file /mnt/beegfs/vfajardo/pbstmp.4117773.herman.hpc.lji.org/RtmpuP0TfR/file4ec61f057ae9
+16:01:59 Searching Annoy index using 1 thread, search_k = 3000
+16:02:14 Annoy recall = 100%
+16:02:14 Commencing smooth kNN distance calibration using 1 thread
+16:02:16 Initializing from normalized Laplacian + noise
+16:02:21 Commencing optimization for 200 epochs, with 931414 positive edges
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+16:02:57 Optimization finished
+Warning messages:
+1: In print.DimReduc(x = reduction.data, dims = ndims.print, nfeatures = nfeatures.print) :
+  Only 4 dimensions have been computed.
+2: Requested number is larger than the number of available items (5). Setting to 5. 
+3: Requested number is larger than the number of available items (5). Setting to 5. 
+4: Requested number is larger than the number of available items (5). Setting to 5. 
+5: Requested number is larger than the number of available items (5). Setting to 5. 
+6: In `[[.DimReduc`(args$object, cells, args$dims) :
+  The following embeddings are not present: NA

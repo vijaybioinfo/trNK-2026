@@ -1,0 +1,86 @@
+cat: /var/spool/torque/aux//3940021.herman.hpc.lji.orggpu: No such file or directory
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Normalizing across features
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+No threshold found for Hashtag07...
+Iteration 1
+Using quantile 0.35
+No threshold found for Hashtag07...
+Iteration 2
+Using quantile 0.55
+Iteration 3
+Using quantile 0.55
+Iteration 4
+Using quantile 0.55
+Iteration 5
+Using quantile 0.55
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+PC_ 1 
+Positive:  Hashtag06, Hashtag10 
+Negative:  Hashtag09, Hashtag07 
+PC_ 2 
+Positive:  Hashtag07, Hashtag08 
+Negative:  Hashtag09, Hashtag10 
+PC_ 3 
+Positive:  Hashtag08, Hashtag09 
+Negative:  Hashtag06, Hashtag07 
+PC_ 4 
+Positive:  Hashtag07, Hashtag10 
+Negative:  Hashtag08, Hashtag06 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+19:56:58 UMAP embedding parameters a = 0.9922 b = 1.112
+19:56:58 Read 13539 rows and found 5 numeric columns
+19:56:58 Using Annoy for neighbor search, n_neighbors = 30
+19:56:58 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+19:57:01 Writing NN index file to temp file /mnt/beegfs/vfajardo/pbstmp.3940021.herman.hpc.lji.org/RtmpTMOvxW/file7eaa2dc3a23a
+19:57:01 Searching Annoy index using 1 thread, search_k = 3000
+19:57:08 Annoy recall = 100%
+19:57:09 Commencing smooth kNN distance calibration using 1 thread
+19:57:10 Initializing from normalized Laplacian + noise
+19:57:12 Commencing optimization for 200 epochs, with 456240 positive edges
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+19:57:28 Optimization finished
+Warning messages:
+1: In print.DimReduc(x = reduction.data, dims = ndims.print, nfeatures = nfeatures.print) :
+  Only 4 dimensions have been computed.
+2: Requested number is larger than the number of available items (5). Setting to 5. 
+3: Requested number is larger than the number of available items (5). Setting to 5. 
+4: Requested number is larger than the number of available items (5). Setting to 5. 
+5: Requested number is larger than the number of available items (5). Setting to 5. 
+6: In `[[.DimReduc`(args$object, cells, args$dims) :
+  The following embeddings are not present: NA
